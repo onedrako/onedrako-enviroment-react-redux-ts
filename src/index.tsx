@@ -1,14 +1,19 @@
+// Dependencies
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App'
 import { BrowserRouter } from 'react-router-dom'
+// Redux
+import { applyMiddleware, compose } from 'redux'
 import { Provider } from 'react-redux'
-import { applyMiddleware, compose, createStore } from 'redux'
-import rootReducer from '@redux/reducers/rootReducer'
+import { configureStore } from '@reduxjs/toolkit'
 import thunk from 'redux-thunk'
+import rootReducer from '@redux/reducers/rootReducer'
+
+// Components
+import App from './App'
 
 const composeEnhancers = compose(applyMiddleware(thunk))
-const store = createStore(rootReducer, composeEnhancers)
+const store = configureStore({ reducer: rootReducer, enhancers: [composeEnhancers] })
 
 const container = document.getElementById('root')
 if (container) {
