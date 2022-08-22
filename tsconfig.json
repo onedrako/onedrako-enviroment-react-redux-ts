@@ -13,7 +13,7 @@
         // "@customTypes/*": ["types/*"],
         // "@hooks/*": ["hooks/*"],
         "@pages/*": ["pages/*"],
-        // "@redux/*": ["redux/*"],
+        "@redux/*": ["redux/*"],
         "@styles/*": ["styles/*"],
         // "@utils/*": ["utils/*"]
       },

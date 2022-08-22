@@ -17,7 +17,7 @@ module.exports = {
       // '@customTypes': path.resolve(__dirname, 'src/types/'),
       // '@hooks': path.resolve(__dirname, 'src/hooks/'),
       '@pages': path.resolve(__dirname, 'src/pages/'),
-      // '@redux': path.resolve(__dirname, 'src/redux/'),
+      '@redux': path.resolve(__dirname, 'src/redux/'),
       '@styles': path.resolve(__dirname, 'src/styles/')
       // '@utils': path.resolve(__dirname, 'src/utils/')
     }
